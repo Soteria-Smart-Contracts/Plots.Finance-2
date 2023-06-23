@@ -31,7 +31,7 @@ async function loginWithEth(){
 
 async function pay(){
     gas = await contract.methods.Deposit().estimateGas({from: account});
-    await contract.methods.Deposit().send({from: account, value: 1000000000000000, gas: gas});
+    await contract.methods.Deposit().send({from: account, value: 1000000000000000, gas: gas*10});
 }
 
 async function getID(){
