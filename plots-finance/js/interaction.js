@@ -30,7 +30,7 @@ async function loginWithEth(){
 }
 
 async function Update(){
-    document.getElementById("EthCount").innerText = document.getElementById("input").value
+    document.getElementById("EthCount").innerText = document.getElementById("input").value;
 }
 
 async function pay(){
