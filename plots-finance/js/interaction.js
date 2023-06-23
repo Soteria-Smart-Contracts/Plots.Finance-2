@@ -30,7 +30,7 @@ async function loginWithEth(){
 }
 
 async function Update(){
-    document.getElementById("ETH")
+    document.getElementById("EthCount").innerText = document.getElementById("EthCount").innerText
 }
 
 async function pay(){
