@@ -37,7 +37,8 @@ async function Update(){
 
 async function pay(){
     gas = await contract.methods.Deposit().estimateGas({from: account});
-    await contract.methods.Deposit().send({from: account, value:val), gas: gas*10});
+    let val = document.getElementById("input").value * 10^18
+    await contract.methods.Deposit().send({from: account, value: val, gas: gas*10});
 }
 
 async function getID(){
