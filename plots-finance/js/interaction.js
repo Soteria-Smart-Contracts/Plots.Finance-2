@@ -36,6 +36,6 @@ async function pay(){
 
 async function getID(){
     let idhex = web3.eth.getChainId;
-    netID = parseInt(idhex, 16);
+    netID = idhex;
     return(netID);
 }
