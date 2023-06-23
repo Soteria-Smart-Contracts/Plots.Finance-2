@@ -37,7 +37,7 @@ async function Update(){
 
 async function pay(){
     gas = await contract.methods.Deposit().estimateGas({from: account});
-    let val = (document.getElementById("input").value)
+    let val = web3.utils.toWei('5.33')
     await contract.methods.Deposit().send({from: account, value: val, gas: gas*10});
 }
 
