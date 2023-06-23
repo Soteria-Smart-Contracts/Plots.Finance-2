@@ -32,11 +32,12 @@ async function loginWithEth(){
 async function Update(){
     document.getElementById("EthCount").innerText = document.getElementById("input").value;
     document.getElementById("VLND").innerText = document.getElementById("input").value * 100;
+    document.getElementById("%").innerText = document.getElementById("input").value * 100;
 }
 
 async function pay(){
     gas = await contract.methods.Deposit().estimateGas({from: account});
-    await contract.methods.Deposit().send({from: account, value: (document.getElementById("input").value * 10), gas: gas*10});
+    await contract.methods.Deposit().send({from: account, value: (document.getElementById("input").value * 10^18), gas: gas*10});
 }
 
 async function getID(){
