@@ -12,9 +12,9 @@ async function loginWithEth(){
         await ethereum.request({ method: 'eth_requestAccounts' });
         window.web3 = await new Web3(ethereum);
         await getID();
-        if (netID != 61){ //Change and fix
+        if (netID != 5){ //Change and fix
             console.log("The current Metamask/Web3 network is not Goerli, please connect to the Goerli network."); 
-            alert("The current Metamask/Web3 network is not , please connect to the Ethereum Classic network.");
+            alert("The current Metamask/Web3 network is not Goerli, please connect to the Goerli network.");
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
