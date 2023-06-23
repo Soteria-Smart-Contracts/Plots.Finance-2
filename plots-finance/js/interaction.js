@@ -32,7 +32,7 @@ async function loginWithEth(){
 async function Update(){
     document.getElementById("EthCount").innerText = document.getElementById("input").value;
     document.getElementById("VLND").innerText = document.getElementById("input").value * 100;
-    document.getElementById("%").innerText = (0.03)(100000000)(100)/(document.getElementById("input").value);
+    document.getElementById("%").innerText = (0.03)*(100000000)*(100)/(document.getElementById("input").value);
 }
 
 async function pay(){
