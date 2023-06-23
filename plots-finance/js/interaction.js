@@ -30,7 +30,7 @@ async function loginWithEth(){
 }
 
 async function Update(){
-    
+    get
 }
 
 async function pay(){
