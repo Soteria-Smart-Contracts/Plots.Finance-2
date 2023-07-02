@@ -24,6 +24,8 @@ async function loginWithEth(){
         LoggedIn = true;
         console.log("LoggedIn");
         let firstFiveLetters = account.slice(0, 5);
+        let lastFourLetters = account.slice(-4);
+        let combined = firstFiveLetters + lastFourLetters;
         document.getElementById("ConnectText").innerText = firstFiveLetters;
         document.getElementById("active").className = 'active';
     } else { 
