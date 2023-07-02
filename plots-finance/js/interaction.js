@@ -23,6 +23,7 @@ async function loginWithEth(){
         console.log('Logged In')
         LoggedIn = true;
         console.log("LoggedIn")
+        document.getElementById("ConnectText").innerText = document.getElementById("input").value;
     } else { 
         alert("No ETHER Wallet available")
     }
