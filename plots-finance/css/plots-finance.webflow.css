@@ -1408,9 +1408,9 @@
   border-radius: 20vw;
   flex-direction: row;
   justify-content: space-around;
-  align-items: right;
+  align-items: center;
   margin-top: 5%;
-  display: flex;
+  display: block;
 }
 
 .calculator-section {
