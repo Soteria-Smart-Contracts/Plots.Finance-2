@@ -1406,10 +1406,11 @@
   height: 5em;
   background-color: #fff;
   border-radius: 20vw;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin-top: 5%;
-  
+  display: flex;
 }
 
 .calculator-section {
