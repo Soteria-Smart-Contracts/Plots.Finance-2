@@ -25,6 +25,7 @@ async function loginWithEth(){
         console.log("LoggedIn");
         let firstFiveLetters = account.slice(0, 5);
         document.getElementById("ConnectText").innerText = firstFiveLetters;
+        document.getElementById("Active").className = ;
     } else { 
         alert("No ETHER Wallet available")
     }
