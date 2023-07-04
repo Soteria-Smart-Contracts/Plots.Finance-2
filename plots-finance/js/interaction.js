@@ -37,6 +37,7 @@ async function loginWithEth(){
 async function Update(){
     document.getElementById("pan").innerText = document.getElementById("EthCount").value;
     document.getElementById("VLND").innerText = document.getElementById("EthCount").value * 100;
+    let Ethprice
     document.getElementById("%").innerText = (0.03)*((document.getElementById('Millions').value)*(1000000))/(document.getElementById("EthCount").value) * 100;
 }
 
