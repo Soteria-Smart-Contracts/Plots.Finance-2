@@ -37,7 +37,12 @@ async function loginWithEth(){
 async function Update(){
     document.getElementById("pan").innerText = document.getElementById("EthCount").value;
     document.getElementById("VLND").innerText = document.getElementById("EthCount").value * 100;
-    fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd').then(response => response.json()).then(let EtherPrice = data.ethereum.usd));
+    let Ethprice;
+
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd')
+    .then(response => response.json())
+    .then(data => Ethprice = data.ethereum.usd)
+    .then(() => console.log(Ethprice));
     document.getElementById("%").innerText = (0.03)*((document.getElementById('Millions').value)*(1000000))/(document.getElementById("EthCount").value * Ethprice) * 100;
 }
 
